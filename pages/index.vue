@@ -1,7 +1,15 @@
 <template>
-  <Tutorial />
+  <Auth />
 </template>
 
 <script>
-export default {}
+import Auth from '@/components/blocks/authorization'
+export default {
+  components: {
+    Auth
+  },
+  mounted () {
+    console.log(localStorage.userAuth )
+  }
+}
 </script>
